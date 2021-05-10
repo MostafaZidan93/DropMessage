@@ -10,7 +10,7 @@ import UIKit
 import ProgressHUD
 
 class LoginViewController: UIViewController {
-
+    
     //MARK: - IBoutlets
     //labels
     @IBOutlet weak var loginRegisterTitle: UILabel!
@@ -74,7 +74,7 @@ class LoginViewController: UIViewController {
             ProgressHUD.showError("Email is required")
         }
     }
-
+    
     
     @IBAction func signupButtonPressed(_ sender: UIButton) {
         updateUIFor(login: sender.titleLabel?.text == "Login")
@@ -201,7 +201,9 @@ class LoginViewController: UIViewController {
     }
     //MARK: - Navigation
     func goToApp() {
-        
+        let mainView = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "MainApp") as! UITabBarController
+        mainView.modalPresentationStyle = .currentContext
+        self.present(mainView, animated: true, completion: nil)
     }
 }
 

@@ -93,7 +93,6 @@
 			children = (
 				C4561BA42640494E009B9A05 /* AppDelegate.swift */,
 				C4561BAD2640494F009B9A05 /* Assets.xcassets */,
-				C463C07B2645EF0B00F1A7C4 /* Constants.swift */,
 				C453E3CE2646D14800230FEF /* FirebaseHelpers */,
 				C4583DDC2640A254006E1CED /* GoogleService-Info.plist */,
 				C4561BB22640494F009B9A05 /* Info.plist */,
@@ -101,6 +100,7 @@
 				C4561BA82640494E009B9A05 /* LoginViewController.swift */,
 				C4561BAA2640494E009B9A05 /* Main.storyboard */,
 				C463C07A2645ECC000F1A7C4 /* Model */,
+				C49926512648D0C000D2ADC9 /* Helpers */,
 				C4561BA62640494E009B9A05 /* SceneDelegate.swift */,
 			);
 			path = DropMessage;
@@ -112,6 +112,14 @@
 				C463C0782645ECBA00F1A7C4 /* User.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		C49926512648D0C000D2ADC9 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C463C07B2645EF0B00F1A7C4 /* Constants.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		FC14EB2FBDE04FEF11DD7606 /* Frameworks */ = {

@@ -7,13 +7,21 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
+    
+    //this variable get notified if there's any changes. wether user logged in or out
+    var authLestiner: AuthStateDidChangeListenerHandle?
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+        
+        
+        //Login Checker
+        self.autoLogin()
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
@@ -48,6 +56,23 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // to restore the scene back to its current state.
     }
 
+    //MARK: - Auto Login
+    func autoLogin() {
+        authLestiner = Auth.auth().addStateDidChangeListener({ (auth, user) in
+            Auth.auth().removeStateDidChangeListener(self.authLestiner!)
+            if user != nil && UserDefaults.standard.object(forKey: kCURRENTUSER) != nil {
+                DispatchQueue.main.async {
+                    self.goToApp()
+                }
+            }
+        })
+    }
+    
+    
+    private func goToApp() {
+        let mainView = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "MainApp") as! UITabBarController
+        self.window?.rootViewController = mainView
+    }
 
 }
 
