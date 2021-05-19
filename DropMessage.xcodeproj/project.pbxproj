@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		358CFDF24B4ECFA21E6D8D94 /* Pods_DropMessage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A1B93D5B303E84EDACAEF48 /* Pods_DropMessage.framework */; };
+		C437098C2652C08E00287E30 /* EditProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C437098B2652C08E00287E30 /* EditProfileTableViewController.swift */; };
 		C453E3CD2646CECA00230FEF /* FCollectionReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = C453E3CC2646CECA00230FEF /* FCollectionReference.swift */; };
 		C4561BA52640494E009B9A05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4561BA42640494E009B9A05 /* AppDelegate.swift */; };
 		C4561BA72640494E009B9A05 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4561BA62640494E009B9A05 /* SceneDelegate.swift */; };
@@ -17,12 +18,14 @@
 		C4561BB12640494F009B9A05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4561BAF2640494F009B9A05 /* LaunchScreen.storyboard */; };
 		C45781472646DF840045E0B3 /* FirebaseUserLestiner.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45781462646DF840045E0B3 /* FirebaseUserLestiner.swift */; };
 		C4583DDD2640A254006E1CED /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C4583DDC2640A254006E1CED /* GoogleService-Info.plist */; };
+		C460AA8A26529D6200D5F1F2 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C460AA8926529D6200D5F1F2 /* SettingsTableViewController.swift */; };
 		C463C0792645ECBA00F1A7C4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C463C0782645ECBA00F1A7C4 /* User.swift */; };
 		C463C07C2645EF0B00F1A7C4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C463C07B2645EF0B00F1A7C4 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5A1B93D5B303E84EDACAEF48 /* Pods_DropMessage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DropMessage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C437098B2652C08E00287E30 /* EditProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileTableViewController.swift; sourceTree = "<group>"; };
 		C453E3CC2646CECA00230FEF /* FCollectionReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCollectionReference.swift; sourceTree = "<group>"; };
 		C4561BA12640494E009B9A05 /* DropMessage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DropMessage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4561BA42640494E009B9A05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +37,7 @@
 		C4561BB22640494F009B9A05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C45781462646DF840045E0B3 /* FirebaseUserLestiner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseUserLestiner.swift; sourceTree = "<group>"; };
 		C4583DDC2640A254006E1CED /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C460AA8926529D6200D5F1F2 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		C463C0782645ECBA00F1A7C4 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C463C07B2645EF0B00F1A7C4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D8F0CEF01E9365B38E43E1AD /* Pods-DropMessage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DropMessage.release.xcconfig"; path = "Target Support Files/Pods-DropMessage/Pods-DropMessage.release.xcconfig"; sourceTree = "<group>"; };
@@ -98,6 +102,8 @@
 				C4561BB22640494F009B9A05 /* Info.plist */,
 				C4561BAF2640494F009B9A05 /* LaunchScreen.storyboard */,
 				C4561BA82640494E009B9A05 /* LoginViewController.swift */,
+				C437098B2652C08E00287E30 /* EditProfileTableViewController.swift */,
+				C460AA8926529D6200D5F1F2 /* SettingsTableViewController.swift */,
 				C4561BAA2640494E009B9A05 /* Main.storyboard */,
 				C463C07A2645ECC000F1A7C4 /* Model */,
 				C49926512648D0C000D2ADC9 /* Helpers */,
@@ -250,6 +256,8 @@
 				C453E3CD2646CECA00230FEF /* FCollectionReference.swift in Sources */,
 				C463C07C2645EF0B00F1A7C4 /* Constants.swift in Sources */,
 				C463C0792645ECBA00F1A7C4 /* User.swift in Sources */,
+				C460AA8A26529D6200D5F1F2 /* SettingsTableViewController.swift in Sources */,
+				C437098C2652C08E00287E30 /* EditProfileTableViewController.swift in Sources */,
 				C4561BA92640494E009B9A05 /* LoginViewController.swift in Sources */,
 				C4561BA52640494E009B9A05 /* AppDelegate.swift in Sources */,
 				C4561BA72640494E009B9A05 /* SceneDelegate.swift in Sources */,
